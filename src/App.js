@@ -4,23 +4,23 @@ import Header from './components/Layout/Header';
 import Meals from './components/Meals/Meals';
 import Cart from './components/Cart/Cart';
 function App() {
-  // const [cartIsshown, setcartIsshown]= useState(false);
-  // const showcartHandler = () =>{
-  // setcartIsshown(true);
-  // };
-  // const hidecartHandler = () => {
-  //   setcartIsshown(false);
-  
+   const [CartIsShown, setCartIsShown]= useState(false);
+  const ShowCartHandler = () =>{
+  setCartIsShown(true);
+  };
+  const hideCartHandler = () => {
+    setCartIsShown(false);
+  };
   return (
     <Fragment>
-      {/* { cartIsshown && <Cart onclose={hidecartHandler}/>} */}
+      { CartIsShown && <Cart onClose={hideCartHandler}/>}
 
       
       
-      {/* <Header  onshowcart= {showcartHandler}/> */}
+      <Header  onShowCart= {ShowCartHandler}/>
       
-      <Cart/>
-      <Header/>
+      {/* <Cart/> */}
+      {/* <Header/> */}
       <main>
         <Meals />
       </main>
