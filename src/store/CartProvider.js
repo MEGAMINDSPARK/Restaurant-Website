@@ -25,7 +25,6 @@
 // };
 
 // export default CartProvider;
-
 import React, { useState } from 'react';
 import CartContext from './cart-context';
 
@@ -86,4 +85,3 @@ const CartProvider = (props) => {
 };
 
 export default CartProvider;
-
